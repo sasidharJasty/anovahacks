@@ -1,0 +1,109 @@
+
+
+.main{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.529);
+  }
+  
+  #chk{
+    display: none;
+  }
+  
+  .signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  label{
+    color: #ffffff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    margin-bottom: 10px !important;
+  }
+  
+  input{
+    border:2px solid rgb(0,201,157);
+    width: 70%;
+    height: 20px;
+    background: #ffffff;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+
+    outline: none;
+    border-radius: 5px;
+    padding-left:10px !important;
+  }
+
+
+  
+  
+  .button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background-color: rgb(0,201,157);;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    
+    border:2px solid rgb(0,201,157);
+  }
+
+  button:hover{
+    background: rgb(255, 255, 255);;
+    color:rgb(0,201,157);;
+    border:2px solid rgb(0,201,157);
+  }
+
+  .login{
+    height:560px;
+    width: 500px;
+    background: #eee;
+    border-radius: 60%/10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+  }
+
+.login label{
+    color: rgb(0,201,157) !important;
+    transform: scale(.6);
+    
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-560px);
+}
+#chk:checked ~ .login label{
+    color: black !important;
+    padding-top: 40px;
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+    color: rgb(0,201,157) !important;
+	transform: scale(.6);
+    transform: translateY(-200px);
+}
