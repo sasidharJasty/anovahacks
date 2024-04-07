@@ -11,11 +11,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/x-charts": "^7.1.1",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.93",
     "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-dropdown-select": "^4.11.2",
+    "react-google-charts": "^4.0.1",
     "react-router-dom": "^6.22.3",
     "react-type-animation": "^3.2.0"
   },

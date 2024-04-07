@@ -16,15 +16,15 @@ function App() {
     <div className="text-box pt-20 typewriter  text-strt left-10">
     <TypeAnimation
       sequence={[
-        'Voluntine',
+        'BridgeHands',
         1300,
         "Let's Volunteer",
         900,
         'Help the community',
+        900,   
+        'Encourage Others',
         900,
-        'Empower Others',
-        900,
-        'Have Fun',
+        'Have Fun!',
         900
       ]}
       wrapper="span"
@@ -32,8 +32,8 @@ function App() {
       style={{ }}
       repeat={Infinity}
     />
-            <h4 className="font-bold text-grey-500 ">LOREM IPSUM MAXIMUS SKILL<br/> </h4>
-            <p className="text-gray-400 w-2/5 ml-5 mt-5 mb-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, accusamus! Ratione, nostrum iusto optio voluptatem, illum cupiditate, quis sint totam illo dolore magni temporibus eligendi laboriosam dolorum necessitatibus animi fugiat?</p>
+            <h4 className="font-bold text-grey-500 ">Empower Your Passion, Transform the World<br/> </h4>
+            <p className="text-gray-400 w-2/5 ml-5 mt-5 mb-11">BridgeHands connects volunteers with organizations to match their passions and expertise with causes needing support, from environmental conservation to education. It offers personalized matches based on interests, envisioning a world where every volunteer contributes meaningfully across diverse sectors.</p>
             <a className='ml-5 mt-10 btn rounded-lg px-20 py-3 text-bold hover:bg-white mt-20 ' href="/login/" >Get Started</a>
             
         </div>

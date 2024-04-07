@@ -21,14 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-i0q2pp3f6mi@+-9sk8wet0ml18o7$&j3((4!nfegwpf@3mrr29'
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 AUTH_USER_MODEL = "app.CustomUser"
-
-# Application definition
 
 INSTALLED_APPS = [
     'jazzmin',
@@ -41,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',  # Add corsheaders here
+    'corsheaders', 
     'django_rest_passwordreset',
     "app",
 ]
@@ -59,6 +55,9 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 #CORS_ALLOWED_ORIGINS = ['http://localhost:5173/']
+#CORS_ORIGIN_WHITELIST = [
+#    'http://localhost:5173/',
+#]
 ROOT_URLCONF = 'anovahacks.urls'
 
 TEMPLATES = [
@@ -126,7 +125,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:5173'
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
